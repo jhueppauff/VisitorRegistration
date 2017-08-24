@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="VisitorRegistration.Web._default" Culture="auto:en-US" meta:resourcekey="PageResource1" UICulture="auto" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Default" Culture="auto:en-US" meta:resourcekey="PageResource1" UICulture="auto" %>
 
 <!DOCTYPE html>
 

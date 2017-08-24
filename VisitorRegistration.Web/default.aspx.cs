@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace VisitorRegistration.Web
 {
-    public partial class _default : Page
+    public partial class Default : Page
     {
         string lang = string.Empty;
 
