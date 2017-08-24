@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Endpoint" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:56503/Endpoint.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:56503/Endpoint.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56503/Endpoint.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VisitorRegistration.Wcf" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEndpoint_RegisterVisitor_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterVisitor" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_RegisterVisitor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterVisitorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_GetVisitor_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitor" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_GetVisitor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVisitorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_GetCurrentVisitors_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentVisitors" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_GetCurrentVisitors_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentVisitorsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_DownloadVisitorPass_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadVisitorPass" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_DownloadVisitorPass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadVisitorPassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_GenerateVisitorPass_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateVisitorPass" />
+  </wsdl:message>
+  <wsdl:message name="IEndpoint_GenerateVisitorPass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerateVisitorPassResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEndpoint">
+    <wsdl:operation name="RegisterVisitor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEndpoint/RegisterVisitor" message="tns:IEndpoint_RegisterVisitor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEndpoint/RegisterVisitorResponse" message="tns:IEndpoint_RegisterVisitor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEndpoint/GetVisitor" message="tns:IEndpoint_GetVisitor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEndpoint/GetVisitorResponse" message="tns:IEndpoint_GetVisitor_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentVisitors">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEndpoint/GetCurrentVisitors" message="tns:IEndpoint_GetCurrentVisitors_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEndpoint/GetCurrentVisitorsResponse" message="tns:IEndpoint_GetCurrentVisitors_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadVisitorPass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEndpoint/DownloadVisitorPass" message="tns:IEndpoint_DownloadVisitorPass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEndpoint/DownloadVisitorPassResponse" message="tns:IEndpoint_DownloadVisitorPass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateVisitorPass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEndpoint/GenerateVisitorPass" message="tns:IEndpoint_GenerateVisitorPass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEndpoint/GenerateVisitorPassResponse" message="tns:IEndpoint_GenerateVisitorPass_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEndpoint" type="tns:IEndpoint">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegisterVisitor">
+      <soap:operation soapAction="http://tempuri.org/IEndpoint/RegisterVisitor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisitor">
+      <soap:operation soapAction="http://tempuri.org/IEndpoint/GetVisitor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentVisitors">
+      <soap:operation soapAction="http://tempuri.org/IEndpoint/GetCurrentVisitors" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadVisitorPass">
+      <soap:operation soapAction="http://tempuri.org/IEndpoint/DownloadVisitorPass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateVisitorPass">
+      <soap:operation soapAction="http://tempuri.org/IEndpoint/GenerateVisitorPass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Endpoint">
+    <wsdl:port name="BasicHttpBinding_IEndpoint" binding="tns:BasicHttpBinding_IEndpoint">
+      <soap:address location="http://localhost:56503/Endpoint.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

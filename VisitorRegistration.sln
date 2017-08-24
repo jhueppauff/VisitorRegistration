@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorRegistration.Web", "VisitorRegistration.Web\VisitorRegistration.Web.csproj", "{EF343470-DF8D-427F-B34C-A8E69E90C431}"
+	ProjectSection(ProjectDependencies) = postProject
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA} = {149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorRegistration.Wcf", "VisitorRegistration.Wcf\VisitorRegistration.Wcf.csproj", "{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|ARM.Build.0 = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|x64.Build.0 = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Debug|x86.Build.0 = Debug|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|ARM.ActiveCfg = Release|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|ARM.Build.0 = Release|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|x64.ActiveCfg = Release|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|x64.Build.0 = Release|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|x86.ActiveCfg = Release|Any CPU
+		{EF343470-DF8D-427F-B34C-A8E69E90C431}.Release|x86.Build.0 = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|ARM.Build.0 = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|x64.Build.0 = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Debug|x86.Build.0 = Debug|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|ARM.ActiveCfg = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|ARM.Build.0 = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|x64.ActiveCfg = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|x64.Build.0 = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|x86.ActiveCfg = Release|Any CPU
+		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://vss-hueppauff.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = VisitorRegistration.Web\\VisitorRegistration.Web.csproj
+		SccProjectName1 = VisitorRegistration.Web
+		SccLocalPath1 = VisitorRegistration.Web
+		SccProjectUniqueName2 = VisitorRegistration.Wcf\\VisitorRegistration.Wcf.csproj
+		SccProjectName2 = VisitorRegistration.Wcf
+		SccLocalPath2 = VisitorRegistration.Wcf
+	EndGlobalSection
+EndGlobal
