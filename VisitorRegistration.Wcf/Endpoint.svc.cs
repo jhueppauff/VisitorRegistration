@@ -70,7 +70,7 @@ namespace VisitorRegistration.Wcf
             var application = new Microsoft.Office.Interop.Word.Application();
             var document = new Microsoft.Office.Interop.Word.Document();
 
-            document = application.Documents.Add(Template: @"C:\Users\julian\Documents\visual studio 2017\Projects\VisitorRegistration\VisitorRegistration.Wcf\VisitorPass.docx");
+            document = application.Documents.Add(Template: Properties.Settings.Default.TemplateFile);
 
             application.Visible = false;
 
@@ -105,14 +105,14 @@ namespace VisitorRegistration.Wcf
             }
             document.Fields.Update();
 
-            document.SaveAs2(FileName: Path.Combine(@"C:\Users\julian\Documents\visual studio 2017\Projects\VisitorRegistration\VisitorRegistration.Wcf\Files", FileID.ToString()+ ".docx"));
+            document.SaveAs2(FileName: Path.Combine(Properties.Settings.Default.FileDropLocation, FileID.ToString()+ ".docx"));
             document.Close();
             application.Quit();
 
             var File = new File()
             {
                 ID = FileID.ToString(),
-                FileUrl = Path.Combine(@"C:\Users\julian\Documents\visual studio 2017\Projects\VisitorRegistration\VisitorRegistration.Wcf\Files", FileID.ToString() + ".docx").ToString(),
+                FileUrl = Path.Combine(Properties.Settings.Default.FileDropLocation, FileID.ToString() + ".docx").ToString(),
                 VisitorID = ID
             };
             using (var db = new VisitorRegistrationEntities())
