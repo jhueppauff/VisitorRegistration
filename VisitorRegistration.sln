@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorRegistration.Web", "VisitorRegistration.Web\VisitorRegistration.Web.csproj", "{EF343470-DF8D-427F-B34C-A8E69E90C431}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorRegistration.Web", "
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisitorRegistration.Wcf", "VisitorRegistration.Wcf\VisitorRegistration.Wcf.csproj", "{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database", "Database\Database.sqlproj", "{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,20 +56,35 @@ Global
 		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|x64.Build.0 = Release|Any CPU
 		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|x86.ActiveCfg = Release|Any CPU
 		{149A3EB1-E0A1-460B-BEEC-D76DAF9C90FA}.Release|x86.Build.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|ARM.Build.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|ARM.Deploy.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|x64.Build.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|x86.Build.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|ARM.Build.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|ARM.Deploy.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|x64.ActiveCfg = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|x64.Build.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|x64.Deploy.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|x86.ActiveCfg = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|x86.Build.0 = Release|Any CPU
+		{E86E1EAA-A1B6-4B1B-A1D1-C3A5D17DEFBC}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://vss-hueppauff.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = VisitorRegistration.Web\\VisitorRegistration.Web.csproj
-		SccProjectName1 = VisitorRegistration.Web
-		SccLocalPath1 = VisitorRegistration.Web
-		SccProjectUniqueName2 = VisitorRegistration.Wcf\\VisitorRegistration.Wcf.csproj
-		SccProjectName2 = VisitorRegistration.Wcf
-		SccLocalPath2 = VisitorRegistration.Wcf
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {247EE24B-7279-4ACD-938B-6E846E2A853A}
 	EndGlobalSection
 EndGlobal
