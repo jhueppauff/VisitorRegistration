@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="VisitorRegistration.Web.Default1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -22,14 +23,16 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="default.aspx?lang=en-US" onserverclick="ChangeLanguageEnglish_Click" runat="server"><asp:Localize runat="server"
-                                ID="loc_English"
-                                Text="English" meta:resourcekey="English" /><span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="default.aspx?lang=en-US" runat="server">
+                        <asp:Localize runat="server"
+                            ID="loc_English"
+                            Text="English" meta:resourcekey="English" /><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="default.aspx?lang=de-DE" onserverclick="ChangeLanguageGerman_Click" runat="server"><asp:Localize runat="server"
-                                ID="loc_german"
-                                Text="German" meta:resourcekey="German" /></a>
+                    <a class="nav-link" href="default.aspx?lang=de-DE" runat="server">
+                        <asp:Localize runat="server"
+                            ID="loc_german"
+                            Text="German" meta:resourcekey="German" /></a>
                 </li>
 
             </ul>
@@ -38,9 +41,10 @@
     </nav>
     <div class="container">
         <div class="content">
-            <h4><asp:Localize runat="server"
-                                ID="loc_welcometext"
-                                Text="Please enter your Informations below." meta:resourcekey="Welcome" /></h4>
+            <h4>
+                <asp:Localize runat="server"
+                    ID="loc_welcometext"
+                    Text="Please enter your Informations below." meta:resourcekey="Welcome" /></h4>
             <br />
             <form runat="server" id="submitform" method="post">
                 <div class="form-row">
@@ -52,28 +56,32 @@
                         <input runat="server" type="text" class="form-control" id="inputFirstName" placeholder="" />
                     </div>
                     <div class="form-group col-md-6">
-                        <label runat="server" for="inputLastName" class="col-form-label"><asp:Localize runat="server"
+                        <label runat="server" for="inputLastName" class="col-form-label">
+                            <asp:Localize runat="server"
                                 ID="loc_inputLastName"
                                 Text="Last Name" meta:resourcekey="LastName" /></label>
                         <input runat="server" type="text" class="form-control" id="inputLastName" placeholder="" />
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputID" runat="server" class="col-form-label"><asp:Localize runat="server"
-                                ID="loc_inputID"
-                                Text="Identity Number" meta:resourcekey="IdentityNumber" /></label>
+                    <label for="inputID" runat="server" class="col-form-label">
+                        <asp:Localize runat="server"
+                            ID="loc_inputID"
+                            Text="Identity Number" meta:resourcekey="IdentityNumber" /></label>
                     <input type="text" runat="server" class="form-control" id="inputID" placeholder="1234" />
                 </div>
                 <div class="form-group">
-                    <label for="inputEmail" runat="server" class="col-form-label"><asp:Localize runat="server"
-                                ID="loc_Email"
-                                Text="E-Mail" meta:resourcekey="Email" /></label>
+                    <label for="inputEmail" runat="server" class="col-form-label">
+                        <asp:Localize runat="server"
+                            ID="loc_Email"
+                            Text="E-Mail" meta:resourcekey="Email" /></label>
                     <input type="email" runat="server" class="form-control" id="inputEmail" placeholder="Email" />
                 </div>
                 <div class="form-group">
-                    <label for="inputHostEmail" runat="server" class="col-form-label"><asp:Localize runat="server"
-                                ID="loc_hostemail"
-                                Text="E-Mail of your Host" meta:resourcekey="EmailOfHost" /></label>
+                    <label for="inputHostEmail" runat="server" class="col-form-label">
+                        <asp:Localize runat="server"
+                            ID="loc_hostemail"
+                            Text="E-Mail of your Host" meta:resourcekey="EmailOfHost" /></label>
                     <input type="email" runat="server" class="form-control" id="inputHostEmail" placeholder="Email" />
 
                 </div>
@@ -86,24 +94,31 @@
                             <canvas width="658" runat="server" height="318" style="touch-action: none;"></canvas>
                         </div>
                         <div class="m-signature-pad--footer">
-                            <div class="description"><asp:Localize runat="server"
-                                ID="loc_signabove"
-                                Text="Sign above" meta:resourcekey="Signabove" /></div>
-                            <button type="button" class="button clear" runat="server" data-action="clear"><asp:Localize runat="server"
-                                ID="loc_clear"
-                                Text="Clear" meta:resourcekey="Clear" /></button>
+                            <div class="description">
+                                <asp:Localize runat="server"
+                                    ID="loc_signabove"
+                                    Text="Sign above" meta:resourcekey="Signabove" />
+                            </div>
+                            <button type="button" class="button clear" runat="server" data-action="clear">
+                                <asp:Localize runat="server"
+                                    ID="loc_clear"
+                                    Text="Clear" meta:resourcekey="Clear" /></button>
 
                         </div>
                     </div>
                 </div>
-                <button type="submit"  runat="server"  onserverclick="SignIn_ServerClick" style="display:none" id="hiddenbutton"></button>
-                <button type="button" class="btn btn-primary" runat="server" onclick="save();"><a class="fa fa-save"></a> <asp:Localize runat="server"
-                                ID="loc_signin"
-                                Text="Sign In" meta:resourcekey="SignIn" /></button>
-                <button type="button" class="btn btn-danger" runat="server" onclick="document.getElementById('submitform').reset();"><a class="fa fa-times"></a> <asp:Localize runat="server"
-                                ID="loc_clearall"
-                                Text="Clear all" meta:resourcekey="ClearAll" /></button>
-                <input id="signaturebinary" style="display:none;" runat="server" value="" type="text"/>
+                <button type="submit" runat="server" onserverclick="SignIn_ServerClick" style="display: none" id="hiddenbutton"></button>
+                <button type="button" class="btn btn-primary" runat="server" onclick="save();">
+                    <a class="fa fa-save"></a>
+                    <asp:Localize runat="server"
+                        ID="loc_signin"
+                        Text="Sign In" meta:resourcekey="SignIn" /></button>
+                <button type="button" class="btn btn-danger" runat="server" onclick="document.getElementById('submitform').reset();">
+                    <a class="fa fa-times"></a>
+                    <asp:Localize runat="server"
+                        ID="loc_clearall"
+                        Text="Clear all" meta:resourcekey="ClearAll" /></button>
+                <input id="signaturebinary" style="display: none;" runat="server" value="" type="text" />
             </form>
 
 
