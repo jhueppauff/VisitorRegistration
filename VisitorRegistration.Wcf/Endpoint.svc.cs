@@ -68,9 +68,9 @@ namespace VisitorRegistration.Wcf
             Guid FileID = Guid.NewGuid();
 
             var application = new Microsoft.Office.Interop.Word.Application();
-            var document = new Microsoft.Office.Interop.Word.Document();
+            
 
-            document = application.Documents.Add(Template: Properties.Settings.Default.TemplateFile);
+            var document = application.Documents.Add(Template: Properties.Settings.Default.TemplateFile);
 
             application.Visible = false;
 
@@ -136,7 +136,7 @@ namespace VisitorRegistration.Wcf
 
 
                 
-                FileBinary = System.IO.File.ReadAllBytes(FileEntry.FileUrl);
+                FileBinary = System.IO.File.ReadAllBytes(Path.Combine(Properties.Settings.Default.FileDropLocation, FileEntry.FileUrl));
             }
 
             using (var db = new VisitorRegistrationEntities())
