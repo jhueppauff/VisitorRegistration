@@ -89,8 +89,10 @@ namespace VisitorRegistration.Web
                 System.Threading.Thread.CurrentThread.CurrentUICulture = Cul;
                 System.Threading.Thread.CurrentThread.CurrentCulture = Cul;
 
-                HttpCookie cookie_new = new HttpCookie("CurrentLanguage");
-                cookie_new.Value = lang;
+                HttpCookie cookie_new = new HttpCookie("CurrentLanguage")
+                {
+                    Value = lang
+                };
                 Response.SetCookie(cookie_new);
             }
 
