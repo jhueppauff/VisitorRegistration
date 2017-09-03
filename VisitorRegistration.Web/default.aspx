@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="default.aspx?lang=en-US" runat="server">
+                    <a class="nav-link" href="#" onserverclick="EN_ServerClick" runat="server">
                         <asp:Localize runat="server"
                             ID="loc_English"
                             Text="English" meta:resourcekey="English" /><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="default.aspx?lang=de-DE" runat="server">
+                    <a class="nav-link" href="#" onserverclick="DE_ServerClick" runat="server">
                         <asp:Localize runat="server"
                             ID="loc_german"
                             Text="German" meta:resourcekey="German" /></a>
