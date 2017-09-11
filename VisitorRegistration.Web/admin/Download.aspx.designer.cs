@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VisitorRegistration.Web.admin
+namespace VisitorRegistration.Web.Admin
 {
 
 

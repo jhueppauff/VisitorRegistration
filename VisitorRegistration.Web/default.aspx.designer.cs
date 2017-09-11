@@ -10,7 +10,7 @@
 namespace VisitorRegistration.Web {
     
     
-    public partial class Default1 {
+    public partial class Default {
         
         /// <summary>
         /// loc_English control.

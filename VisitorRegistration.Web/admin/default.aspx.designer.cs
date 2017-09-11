@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace VisitorRegistration.Web {
+namespace VisitorRegistration.Web.Admin {
     
     
-    public partial class Admin {
+    public partial class Default {
         
         /// <summary>
         /// tbody control.

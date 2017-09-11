@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Download.aspx.cs" Inherits="VisitorRegistration.Web.admin.Download" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Download.aspx.cs" Inherits="VisitorRegistration.Web.Admin.Download" %>
 
 <!DOCTYPE html>
 
