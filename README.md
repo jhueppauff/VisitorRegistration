@@ -10,7 +10,7 @@ A simple Web App for registration of visitors and generating visitor a pass.
 Microsoft .NET Framework 4.5.2
 
 Entity Framework compatible Data Source (e.g. Microsoft SQL Server)
-*MySQL could be workin, but may requiere some extra focus https://forums.mysql.com/read.php?174,601264,601264 
+*MySQL could be work, but may require some extra focus https://forums.mysql.com/read.php?174,601264,601264 
 
 Microsoft IIS Server (WCF enabled)
 
