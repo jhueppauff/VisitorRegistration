@@ -14,6 +14,9 @@ Entity Framework compatible Data Source (e.g. Microsoft SQL Server)
 
 Microsoft IIS Server (WCF enabled)
 
+For Build: 
+Microsoft Visual Studio with Nuget Support
+
 ## Installation
 1) Create Database within SQL Server
 2) Execute SQL Script
