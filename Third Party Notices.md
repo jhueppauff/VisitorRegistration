@@ -66,4 +66,4 @@ A “contributor” is any person that distributes its contribution under this l
 
 ## Trademark Notices
 
-Microsoft® is either a registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. 
+Microsoft® is either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries. 
