@@ -1,6 +1,6 @@
 # VisitorRegistration
 
-A simple Web App for registration of visitors. 
+A simple Web App for registration of visitors and printing visitor passes. 
 
 ## Screenshots
 
