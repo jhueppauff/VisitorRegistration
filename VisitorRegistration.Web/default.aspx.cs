@@ -20,7 +20,7 @@ namespace VisitorRegistration.Web
     /// <summary>
     /// Default Page
     /// </summary>
-    public partial class Default : System.Web.UI.Page
+    public partial class Default : Page
     {
         /// <summary>
         /// Page Load
