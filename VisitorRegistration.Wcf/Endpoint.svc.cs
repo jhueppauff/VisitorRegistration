@@ -173,7 +173,8 @@ namespace VisitorRegistration.Wcf
 
             using (var db = new VisitorRegistrationEntities())
             {
-                int.TryParse(fileEntry.VisitorID.ToString(), out int visitorID);
+                int visitorID;
+                int.TryParse(fileEntry.VisitorID.ToString(), out visitorID);
                 var visitor = (from v in db.Visitors
                             where v.ID == visitorID  
                             select v).FirstOrDefault();
