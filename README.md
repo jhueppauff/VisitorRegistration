@@ -23,3 +23,11 @@ Microsoft IIS Server (WCF enabled)
 
 # Disclaimer 
 This App was only built for a PoC, and is not production ready.
+
+
+# Contribute
+Feel free to contribute, every contribution is welcome irrespective of the size of the change.
+
+Please review the [Code of Conduct](CODE_OF_CONDUCT.md) before making any contribution. 
+
+Before making any source code change, please make sure your code matches the [StyleCop](https://github.com/StyleCop) guidelines.
