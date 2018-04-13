@@ -10,12 +10,13 @@ A simple Web App for registration of visitors and generating visitor a pass.
 Microsoft .NET Framework 4.5.2
 
 Entity Framework compatible Data Source (e.g. Microsoft SQL Server)
-*MySQL could work, but may require some extra focus https://forums.mysql.com/read.php?174,601264,601264 
+
+*MySQL could work(did not tested it), but may require some extra focus https://forums.mysql.com/read.php?174,601264,601264 
 
 Microsoft IIS Server (WCF enabled)
 
-For Build: 
-Microsoft Visual Studio with Nuget Support
+## Build/Compile the Source: 
+Microsoft Visual Studio 2017
 
 ## Installation
 1) Create Database within SQL Server
